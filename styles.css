@@ -1,10 +1,84 @@
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 body {
-	width: 100wh;
+	height: 1200px;
+	font-size: 18px;
+	font-family: sans-serif;
+	color: #5D6063;
+}
+
+a:link,
+a:visited {
+color: #FFF;
+text-decoration: none;
+}
+
+a:hover {
+	text-decoration: ;
+}
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+	width: 150%;
+	padding: 50px;
+
+}
+.menu {
+	margin-top: 15px;
+}
+
+.menu > li {
+	display: inline;
+	margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+     margin-right: 0;
+}
+
+.features-menu {
+	display: flex;
+	flex-direction: column;
+	background: #5D6063;
+	border-radius: 5px;
+	padding-top: 60px;
+
+	position: absolute;
+	top: -25px;
+	left: -30px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown > span {
+	z-index: 2;
+	position: relative;
+	cursor: pointer;
+}
+
+.dropdown:hover .features-menu {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	background: #5D6063;
+	padding-right: 30px;
+	box-shadow: 0px 0px 20px #000000;
+	-webkit-box-shadow: 0px 0px 20px #000000;
+	-webkit-transition: height 200ms ease-in;
+	transition: height 200ms ease-in;
+	overflow: visible;
+	height: 10;
+}
+
+.features-menu {
+	display: none;
+}
+
+body {
+	width: 100vh;
 	height: 90vh;
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -51,6 +125,7 @@ body {
 }
 
 h1 { text-align: top;
+	margin-top: 60px;
 }
 h6 {
 	font-family: 'Open Sans';
@@ -69,16 +144,15 @@ h1 {
 
 div {
 	color: #fff;
-	background-color: #5995DA;
+	background-color: #5D6063;
 	font-weight: bold;
 	padding: 20px;
 	text-align: left;
-	border: 2px solid #5D6063;
+	border: 2px solid #00ffff;
 	border-radius: 5px;
-
-	width: 200px;
+    width: 200px;
 	box-sizing: border-box;
-	margin:20px auto;
+	margin: 20px auto;
 }
 
 body {
@@ -86,29 +160,17 @@ body {
 }
 .page {
 width: 600px;
-margin: 0 auto;
+margin: 0;
 }
 
 .call-to-action {
 	font-style: italic;
-	background-color: #EEB75A;
+	background-color: #ff66ff;
 	text-align: left;
 }
-.tear {
-	position: fixed; z-index: -1;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	width: 60em;
-	height: 60em;
-	border: none;
-	-webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-	border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-	font: normal 100%/normal Arial, Helvetica, sans-serif;
-	color: rgba(0,0,0,1);
-	-o-text-overflow: clip;
-	text-overflow: clip;
-	background: grey red ;
-	-webkit-transform: rotateZ(-45deg);
-	transform: rotateZ(-45deg);
-}
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
